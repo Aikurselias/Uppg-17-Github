@@ -2,23 +2,123 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Om mig</title>
+    <title>Kontakt</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #18181b, #7f1d1d, #431407);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f97316;
+            color: #111827;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            backdrop-filter: blur(8px);
+        }
+
+        .card h2 {
+            color: #f97316;
+        }
+
+        .contact-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Om mig</h1>
+    <header>
+        <h1>Kontakt</h1>
+        <p>Här finns information om hur man kan kontakta mig</p>
+    </header>
 
     <nav>
-        <a href="index.html">Startsida</a> |
-        <a href="om.html">Om mig</a> |
+        <a href="index.html">Startsida</a>
+        <a href="om.html">Om mig</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <hr>
+    <div class="container">
+        <div class="card">
+            <h2>Kontakta mig</h2>
+            <p>Det här är min kontaktsida. Här skulle man kunna lägga till kontaktuppgifter eller annan information.</p>
 
-    <h2>Om mig</h2>
-    <p>Den här sidan handlar om mig och mitt projekt.</p>
-    <p>Jag har skapat denna sida som en del av uppgift 3 i AI-kursen.</p>
+            <div class="contact-box">
+                <p><strong>Namn:</strong> Skriv ditt namn här</p>
+                <p><strong>Kurs:</strong> AI-kursen</p>
+                <p><strong>Projekt:</strong> Uppgift 3 GitHub Pages</p>
+            </div>
+
+            <p>Du kan alltid klicka på menyn för att komma tillbaka till startsidan eller läsa mer på sidan “Om mig”.</p>
+        </div>
+    </div>
+
+    <footer>
+        Tack för att du besökte min sida
+    </footer>
 
 </body>
 </html>
