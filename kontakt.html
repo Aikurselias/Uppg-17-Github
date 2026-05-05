@@ -2,23 +2,118 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Kontakt</title>
+    <title>Om mig</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #164e63, #1e1b4b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #22c55e;
+            color: #111827;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            backdrop-filter: blur(8px);
+        }
+
+        .card h2 {
+            color: #22c55e;
+        }
+
+        .info-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-left: 5px solid #22c55e;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Kontakt</h1>
+    <header>
+        <h1>Om mig</h1>
+        <p>Lite information om personen bakom sidan</p>
+    </header>
 
     <nav>
-        <a href="index.html">Startsida</a> |
-        <a href="om.html">Om mig</a> |
+        <a href="index.html">Startsida</a>
+        <a href="om.html">Om mig</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <hr>
+    <div class="container">
+        <div class="card">
+            <h2>Vem är jag?</h2>
+            <p>Jag är en elev som testar att skapa och publicera webbsidor med hjälp av GitHub Pages.</p>
+            <p>Den här uppgiften handlar mest om tekniken: att skapa flera HTML-sidor och länka mellan dem.</p>
 
-    <h2>Kontaktsida</h2>
-    <p>Det här är min kontaktsida.</p>
-    <p>Här skulle man kunna lägga kontaktinformation eller annan valfri text.</p>
+            <div class="info-box">
+                <p><strong>Det jag har gjort:</strong></p>
+                <p>Jag har skapat tre olika sidor: en startsida, en om mig-sida och en kontaktsida. Alla sidor har en meny så att man kan navigera mellan dem.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Skapad med HTML och CSS
+    </footer>
 
 </body>
 </html>
