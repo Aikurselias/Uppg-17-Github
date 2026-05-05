@@ -3,22 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Min startsida</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111827, #1e3a8a, #312e81);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #38bdf8;
+            color: #111827;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            backdrop-filter: blur(8px);
+        }
+
+        .card h2 {
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Välkommen till min webbsajt</h1>
+    <header>
+        <h1>Min coola webbsajt</h1>
+        <p>En enkel men snygg webbsida skapad för uppgift 3</p>
+    </header>
 
     <nav>
-        <a href="index.html">Startsida</a> |
-        <a href="om.html">Om mig</a> |
+        <a href="index.html">Startsida</a>
+        <a href="om.html">Om mig</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <hr>
+    <div class="container">
+        <div class="card">
+            <h2>Startsida</h2>
+            <p>Välkommen till min webbsajt! Den här sidan är skapad med HTML och CSS och publiceras med GitHub Pages.</p>
+            <p>Syftet med sidan är att visa att jag kan skapa flera sidor och navigera mellan dem.</p>
+            <p>Klicka i menyn ovanför för att gå till de andra sidorna.</p>
+        </div>
+    </div>
 
-    <h2>Startsida</h2>
-    <p>Det här är min startsida för uppgift 3.</p>
-    <p>På den här webbsajten kan man klicka sig mellan tre olika sidor.</p>
+    <footer>
+        Skapad av mig | AI-kursen
+    </footer>
 
 </body>
 </html>
